@@ -7,15 +7,15 @@ const Contact = () => {
       <div className="contact-content">
         <div className="contact-item">
           <span className="contact-icon">📧</span>
-          <span>mos.richard@email.com</span>
+          <span>mosrichard3@gmail.com</span>
         </div>
         <div className="contact-item">
           <span className="contact-icon">💼</span>
-          <span>LinkedIn: /in/mosrichard</span>
+          <span>LinkedIn: <a href='https://www.linkedin.com/in/mos-richard-1316231a6/'>https://www.linkedin.com/in/mos-richard-1316231a6/</a></span>
         </div>
         <div className="contact-item">
           <span className="contact-icon">🐙</span>
-          <span>GitHub: /mosrichard</span>
+          <span>GitHub: <a href='https://github.com/Mosrichard'>https://github.com/Mosrichard</a></span>
         </div>
       </div>
     </div>

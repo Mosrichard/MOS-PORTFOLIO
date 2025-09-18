@@ -49,9 +49,9 @@ const Home = () => {
         <div className="resume-section">
           <h3>Contact</h3>
           <div className="contact-compact">
-            <a href="mailto:mos.richard@email.com" className="contact-info">📧 mos.richard@email.com</a>
-            <a href="https://linkedin.com/in/mosrichard" target="_blank" rel="noopener noreferrer" className="contact-info">💼 LinkedIn: /in/mosrichard</a>
-            <a href="https://github.com/mosrichard" target="_blank" rel="noopener noreferrer" className="contact-info">🐙 GitHub: /mosrichard</a>
+            <a href="mailto:mosrichard3@email.com" className="contact-info">📧 mosrichard3@email.com</a>
+            <a href="https://www.linkedin.com/in/mos-richard-1316231a6/" target="_blank" rel="noopener noreferrer" className="contact-info">💼 LinkedIn</a>
+            <a href="https://github.com/Mosrichard" target="_blank" rel="noopener noreferrer" className="contact-info">🐙 GitHub</a>
           </div>
         </div>
       </div>

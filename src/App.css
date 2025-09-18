@@ -1,8 +1,9 @@
 .app {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
 }
@@ -90,6 +91,7 @@
   padding: 1rem 2rem;
   position: relative;
   z-index: 1;
+  min-height: calc(100vh - 80px);
 }
 
 .section {
@@ -101,6 +103,7 @@
   justify-content: center;
   align-items: center;
   min-height: 70vh;
+  padding: 1rem 0;
 }
 
 .projects-section {
@@ -245,6 +248,28 @@
 .project-card p {
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.github-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contact-content {
@@ -428,6 +453,7 @@
   
   .main-content {
     padding: 0.5rem 1rem;
+    min-height: auto;
   }
   
   .skills-grid {
@@ -436,6 +462,7 @@
   
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
   
   .section h2 {
@@ -451,5 +478,51 @@
     gap: 1.5rem;
   }
   
+  .home-page {
+    padding: 1rem 0;
+  }
+  
+  .hero-section {
+    margin-bottom: 2rem;
+  }
+  
+  .project-card {
+    padding: 1.5rem;
+  }
+  
+  .contact-item {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .contact-item span {
+    word-break: break-all;
+  }
+}
 
+@media (max-width: 480px) {
+  .name {
+    font-size: 2rem;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .main-content {
+    padding: 0.5rem;
+  }
+  
+  .resume-section {
+    padding: 1rem;
+  }
+  
+  .nav-links a {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
+  }
 }

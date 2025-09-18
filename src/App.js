@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -28,7 +25,7 @@ function App() {
 
     const interval = setInterval(createFloatingIcon, 2500);
     return () => clearInterval(interval);
-  }, []);
+  }, [devopsIcons]);
 
   const renderSection = () => {
     switch(activeSection) {
