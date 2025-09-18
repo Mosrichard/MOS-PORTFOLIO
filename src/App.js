@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -59,6 +60,7 @@ function App() {
       <div className="main-content">
         {renderSection()}
       </div>
+      <Analytics />
     </div>
   );
 }
