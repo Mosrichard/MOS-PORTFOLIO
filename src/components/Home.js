@@ -49,7 +49,7 @@ const Home = () => {
         <div className="resume-section">
           <h3>Contact</h3>
           <div className="contact-compact">
-            <a href="mailto:mosrichard3@email.com" className="contact-info">📧 mosrichard3@email.com</a>
+            <a href="mailto:mosrichard3@gmail.com" className="contact-info">📧 mosrichard3@gmail.com</a>
             <a href="https://www.linkedin.com/in/mos-richard-1316231a6/" target="_blank" rel="noopener noreferrer" className="contact-info">💼 LinkedIn</a>
             <a href="https://github.com/Mosrichard" target="_blank" rel="noopener noreferrer" className="contact-info">🐙 GitHub</a>
           </div>
