@@ -5,7 +5,9 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState(() => {
+    return localStorage.getItem('activeSection') || 'home';
+  });
   const [floatingIcons, setFloatingIcons] = useState([]);
 
   const devopsIcons = ['🐳', '☁️', '🔧', '🛠️', '⚙️'];
@@ -27,6 +29,11 @@ function App() {
     const interval = setInterval(createFloatingIcon, 2500);
     return () => clearInterval(interval);
   }, [devopsIcons]);
+
+  // Save active section to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('activeSection', activeSection);
+  }, [activeSection]);
 
   const renderSection = () => {
     switch(activeSection) {
@@ -52,8 +59,8 @@ function App() {
       
       <nav className="navbar">
         <div className="nav-links">
-          <a href="#home" className={activeSection === 'home' ? 'active' : ''} onClick={() => setActiveSection('home')}>Home</a>
-          <a href="#projects" className={activeSection === 'projects' ? 'active' : ''} onClick={() => setActiveSection('projects')}>Projects</a>
+          <a href="#home" className={activeSection === 'home' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveSection('home'); }}>Home</a>
+          <a href="#projects" className={activeSection === 'projects' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveSection('projects'); }}>Projects</a>
         </div>
       </nav>
 

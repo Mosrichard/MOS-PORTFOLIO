@@ -1,4 +1,6 @@
 import React from 'react';
+import project2Image from '../assets/project2.jpg';
+import project3Image from '../assets/project3.jpg';
 
 const Projects = () => {
   return (
@@ -24,10 +26,10 @@ const Projects = () => {
         </div>
         <div className="project-card project-card-with-image">
           <div className="project-image-section">
-            <img src="/images/project 2.jpg" alt="Deployment Automation" className="project-image" />
+            <img src={project2Image} alt="Deployment Automation" className="project-image" />
             <div className="project-title-overlay">
               <h3>Deployment Automation using Adhoc Cmds</h3>
-              <p>Automated deployment pipeline using Docker and Kubernetes</p>
+              <p>Used Ansible ad-hoc commands to deploy a static web application on multiple AWS EC2 instances with NGINX server.</p>
             </div>
           </div>
           <div className="project-content-section">
@@ -46,19 +48,24 @@ const Projects = () => {
         </div>
         <div className="project-card project-card-with-image">
           <div className="project-image-section">
+            <img src={project3Image} alt="Automated Static App Deployment" className="project-image" />
             <div className="project-title-overlay">
-              <h3>Data ETL Pipeline</h3>
-              <p>Scalable data processing pipeline on AWS with Python</p>
+              <h3>Automated Static App Deployment with Ansible</h3>
+              <p>Used Ansible playbook to automate the deployment of a static web application on a target node with NGINX server.</p>
             </div>
           </div>
           <div className="project-content-section">
             <div className="project-skills">
-              <span className="skill-tag">Python</span>
-              <span className="skill-tag">AWS</span>
-              <span className="skill-tag">SQL</span>
-              <span className="skill-tag">Apache Airflow</span>
+              <span className="skill-tag">Ansible</span>
+              <span className="skill-tag">Adhoc-cmds</span>
+              <span className="skill-tag">Ans-playbook</span>
+              <span className="skill-tag">YAML</span>
+              <span className="skill-tag">Linux</span>
+              <span className="skill-tag">Nginx</span>
+              <span className="skill-tag">AWS (EC2)</span>
+              <span className="skill-tag">SSH</span>
             </div>
-            <a href="https://github.com/Mosrichard/data-etl-pipeline" target="_blank" rel="noopener noreferrer" className="github-btn">
+            <a href="https://github.com/Mosrichard/Deployment-automation-using-ansible-playbook" target="_blank" rel="noopener noreferrer" className="github-btn">
               🐙 View on GitHub
             </a>
           </div>
