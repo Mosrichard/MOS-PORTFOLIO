@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MOS-PORTFOLIO/static/css/main.0ae3c57e.css",
+    "main.js": "/MOS-PORTFOLIO/static/js/main.a762cfae.js",
+    "static/media/project3.jpg": "/MOS-PORTFOLIO/static/media/project3.9971fe01b335ceae4229.jpg",
+    "static/media/project2.jpg": "/MOS-PORTFOLIO/static/media/project2.b440f93447e586437558.jpg",
+    "index.html": "/MOS-PORTFOLIO/index.html",
+    "main.0ae3c57e.css.map": "/MOS-PORTFOLIO/static/css/main.0ae3c57e.css.map",
+    "main.a762cfae.js.map": "/MOS-PORTFOLIO/static/js/main.a762cfae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ae3c57e.css",
+    "static/js/main.a762cfae.js"
+  ]
+}
