@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/MOS-PORTFOLIO/static/css/main.1e170695.css",
+    "main.js": "/MOS-PORTFOLIO/static/js/main.dafd547e.js",
+    "static/media/project3.jpg": "/MOS-PORTFOLIO/static/media/project3.9971fe01b335ceae4229.jpg",
+    "static/media/project2.jpg": "/MOS-PORTFOLIO/static/media/project2.b440f93447e586437558.jpg",
+    "static/media/docker-project-2.jpg": "/MOS-PORTFOLIO/static/media/docker-project-2.cac1d8a093c7ee8cd74a.jpg",
+    "static/media/docker-project-1.jpg": "/MOS-PORTFOLIO/static/media/docker-project-1.9a528a4a7b9fc6e74b56.jpg",
+    "index.html": "/MOS-PORTFOLIO/index.html",
+    "main.1e170695.css.map": "/MOS-PORTFOLIO/static/css/main.1e170695.css.map",
+    "main.dafd547e.js.map": "/MOS-PORTFOLIO/static/js/main.dafd547e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e170695.css",
+    "static/js/main.dafd547e.js"
+  ]
+}
