@@ -37,10 +37,18 @@ const Home = () => {
           <div className="skills-compact">
             <span className="skill-tag">Python</span>
             <span className="skill-tag">SQL</span>
-            <span className="skill-tag">Tableau</span>
+            <span className="skill-tag">Ansible</span>
+            <span className="skill-tag">Linux</span>
             <span className="skill-tag">Docker</span>
             <span className="skill-tag">AWS</span>
             <span className="skill-tag">Kubernetes</span>
+            <span className="skill-tag">GitHub</span>
+            <span className="skill-tag">Nginx</span>
+            <span className="skill-tag">HTTPD</span>
+            <span className="skill-tag">Jenkins</span>
+            <span className="skill-tag">Grafana</span>
+            <span className="skill-tag">Splunk</span>
+            <span className="skill-tag">Excel</span>
             <span className="skill-tag">Power BI</span>
             <span className="skill-tag">Git</span>
           </div>
