@@ -3,6 +3,7 @@ import project2Image from '../assets/project2.jpg';
 import project3Image from '../assets/project3.jpg';
 import dockerProject1Image from '../assets/docker-project-1.jpg';
 import dockerProject2Image from '../assets/docker-project-2.jpg';
+import k8sProject1Image from '../assets/k8s-project-1.jpeg';
 
 const Projects = () => {
   return (
@@ -190,6 +191,79 @@ const Projects = () => {
                 <span className="skill-tag">AWS</span>
               </div>
               <a href="https://github.com/Mosrichard/docker-microservices" target="_blank" rel="noopener noreferrer" className="github-btn">
+                🐙 View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Kubernetes Projects */}
+      <div className="tech-category kubernetes-category">
+        <h3 className="tech-title">Kubernetes Projects</h3>
+        <div className="projects-grid">
+          <div className="project-card project-card-with-image">
+            <div className="project-image-section">
+              <img src={k8sProject1Image} alt="K8s React Deployment" className="project-image" />
+              <div className="project-title-overlay">
+                <h3>K8s "React Deployment"</h3>
+                <p>Built and deployed a React app containerized with Nginx on a Minikube Kubernetes cluster using Deployment and Service manifests.</p>
+              </div>
+            </div>
+            <div className="project-content-section">
+              <div className="project-skills">
+                <span className="skill-tag">Kubernetes</span>
+                <span className="skill-tag">Docker</span>
+                <span className="skill-tag">Minikube</span>
+                <span className="skill-tag">Nginx</span>
+                <span className="skill-tag">React.js</span>
+                <span className="skill-tag">Node.js</span>
+                <span className="skill-tag">YAML</span>
+                <span className="skill-tag">Docker Hub</span>
+                <span className="skill-tag">Linux</span>
+                <span className="skill-tag">kubectl</span>
+              </div>
+              <a href="https://github.com/Mosrichard/react-tesla-k8s-deployment" target="_blank" rel="noopener noreferrer" className="github-btn">
+                🐙 View on GitHub
+              </a>
+            </div>
+          </div>
+          <div className="project-card project-card-with-image">
+            <div className="project-image-section">
+              <div className="project-title-overlay">
+                <h3>Microservices on Kubernetes</h3>
+                <p>Deployed scalable microservices architecture using Kubernetes with service discovery and load balancing</p>
+              </div>
+            </div>
+            <div className="project-content-section">
+              <div className="project-skills">
+                <span className="skill-tag">Kubernetes</span>
+                <span className="skill-tag">Microservices</span>
+                <span className="skill-tag">Ingress</span>
+                <span className="skill-tag">ConfigMaps</span>
+                <span className="skill-tag">Secrets</span>
+              </div>
+              <a href="https://github.com/Mosrichard/k8s-microservices" target="_blank" rel="noopener noreferrer" className="github-btn">
+                🐙 View on GitHub
+              </a>
+            </div>
+          </div>
+          <div className="project-card project-card-with-image">
+            <div className="project-image-section">
+              <div className="project-title-overlay">
+                <h3>Kubernetes CI/CD Pipeline</h3>
+                <p>Implemented automated CI/CD pipeline with Kubernetes deployments using GitOps principles and ArgoCD</p>
+              </div>
+            </div>
+            <div className="project-content-section">
+              <div className="project-skills">
+                <span className="skill-tag">Kubernetes</span>
+                <span className="skill-tag">ArgoCD</span>
+                <span className="skill-tag">GitOps</span>
+                <span className="skill-tag">Helm</span>
+                <span className="skill-tag">Jenkins</span>
+              </div>
+              <a href="https://github.com/Mosrichard/k8s-cicd-gitops" target="_blank" rel="noopener noreferrer" className="github-btn">
                 🐙 View on GitHub
               </a>
             </div>

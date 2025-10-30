@@ -254,6 +254,8 @@ html {
     grid-template-columns: repeat(2, 350px);
     max-width: 800px;
   }
+  
+
 }
 
 @media (max-width: 800px) {
@@ -439,6 +441,40 @@ html {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+/* Kubernetes Projects - Bigger Cards */
+.kubernetes-category .project-card,
+.kubernetes-category .project-card-with-image {
+  height: 550px;
+}
+
+.kubernetes-category .project-content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.kubernetes-category .project-skills {
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  .kubernetes-category .project-card,
+  .kubernetes-category .project-card-with-image {
+    height: 520px;
+  }
+}
+
+@media (max-width: 400px) {
+  .kubernetes-category .project-card,
+  .kubernetes-category .project-card-with-image {
+    height: 480px;
+  }
 }
 
 .contact-content {
