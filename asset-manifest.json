@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MOS-PORTFOLIO/static/css/main.67c6bc5b.css",
+    "main.css": "/MOS-PORTFOLIO/static/css/main.3fdc8464.css",
     "main.js": "/MOS-PORTFOLIO/static/js/main.f87eb458.js",
     "static/js/463.1f58ba51.chunk.js": "/MOS-PORTFOLIO/static/js/463.1f58ba51.chunk.js",
     "static/js/188.1d19de04.chunk.js": "/MOS-PORTFOLIO/static/js/188.1d19de04.chunk.js",
@@ -14,7 +14,7 @@
     "index.html": "/MOS-PORTFOLIO/index.html"
   },
   "entrypoints": [
-    "static/css/main.67c6bc5b.css",
+    "static/css/main.3fdc8464.css",
     "static/js/main.f87eb458.js"
   ]
 }
