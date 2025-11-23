@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import project2Image from '../assets/project2.jpg';
 import project3Image from '../assets/project3.jpg';
 import dockerProject1Image from '../assets/docker-project-1.jpg';
 import dockerProject2Image from '../assets/docker-project-2.jpg';
 import k8sProject1Image from '../assets/k8s-project-1.jpeg';
+import excelDashboardImage from '../assets/Excel-Dashboard-superstore.jpg';
+import biDashboardImage from '../assets/BI Dashboard.jpeg';
 
 const Projects = () => {
-  return (
-    <div className="section projects-section">
-      <h2>Projects</h2>
+  const [activeSubSection, setActiveSubSection] = useState('devops');
+
+  const renderDevOpsContent = () => {
+    return (
+      <>
       
-      {/* Linux Projects */}
+      {/* Linux */}
       <div className="tech-category">
-        <h3 className="tech-title">Linux Projects</h3>
+        <h3 className="tech-title">Linux</h3>
         <div className="projects-grid">
           <div className="project-card project-card-with-image">
             <div className="project-image-section">
@@ -34,9 +38,9 @@ const Projects = () => {
         </div>
       </div>
       
-      {/* Ansible Projects */}
+      {/* Ansible */}
       <div className="tech-category">
-        <h3 className="tech-title">Ansible Projects</h3>
+        <h3 className="tech-title">Ansible</h3>
         <div className="projects-grid">
           <div className="project-card project-card-with-image">
             <div className="project-image-section">
@@ -109,9 +113,9 @@ const Projects = () => {
         </div>
       </div>
       
-      {/* Docker Projects */}
+      {/* Docker */}
       <div className="tech-category">
-        <h3 className="tech-title">Docker Projects</h3>
+        <h3 className="tech-title">Docker</h3>
         <div className="projects-grid">
           <div className="project-card project-card-with-image">
             <div className="project-image-section">
@@ -198,9 +202,9 @@ const Projects = () => {
         </div>
       </div>
       
-      {/* Kubernetes Projects */}
+      {/* Kubernetes */}
       <div className="tech-category kubernetes-category">
-        <h3 className="tech-title">Kubernetes Projects</h3>
+        <h3 className="tech-title">Kubernetes</h3>
         <div className="projects-grid">
           <div className="project-card project-card-with-image">
             <div className="project-image-section">
@@ -270,6 +274,115 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      </>
+    );
+  };
+
+
+
+  const renderDataAnalysisContent = () => {
+    return (
+      <>
+        {/* Business Intelligence */}
+        <div className="tech-category">
+          <h3 className="tech-title">Business Intelligence Dashboards</h3>
+          <div className="projects-grid">
+            <div className="project-card project-card-with-image">
+              <div className="project-image-section">
+                <img src={excelDashboardImage} alt="Excel Dashboard Superstore" className="project-image" />
+                <div className="project-title-overlay">
+                  <h3>Superstore Sales Dashboard</h3>
+                  <p>Interactive Excel dashboard analyzing sales performance and KPIs</p>
+                </div>
+              </div>
+              <div className="project-content-section">
+                <div className="project-skills">
+                  <span className="skill-tag">Excel</span>
+                  <span className="skill-tag">Pivot Tables</span>
+                  <span className="skill-tag">Data Visualization</span>
+                  <span className="skill-tag">KPI Analysis</span>
+                </div>
+                <a href="https://github.com/Mosrichard/excel-superstore-dashboard" target="_blank" rel="noopener noreferrer" className="github-btn">
+                  🐙 View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Python Data Analysis */}
+        <div className="tech-category">
+          <h3 className="tech-title">Python Data Analysis</h3>
+          <div className="projects-grid">
+            <div className="project-card project-card-with-image">
+              <div className="project-image-section">
+                <div className="project-title-overlay">
+                  <h3>Air-BNB Data Cleaning</h3>
+                  <p>Comprehensive data cleaning and preprocessing of Airbnb dataset using Python and pandas</p>
+                </div>
+              </div>
+              <div className="project-content-section">
+                <div className="project-skills">
+                  <span className="skill-tag">Python</span>
+                  <span className="skill-tag">Pandas</span>
+                  <span className="skill-tag">Jupyter Notebook</span>
+                  <span className="skill-tag">Git</span>
+                  <span className="skill-tag">GitHub</span>
+                </div>
+                <a href="https://github.com/Mosrichard/AIR-BNB_dataset_cleaning" target="_blank" rel="noopener noreferrer" className="github-btn">
+                  🐙 View on GitHub
+                </a>
+              </div>
+            </div>
+            <div className="project-card project-card-with-image">
+              <div className="project-image-section">
+                <img src={biDashboardImage} alt="Customer Shopping Behaviour Analysis" className="project-image" />
+                <div className="project-title-overlay">
+                  <h3>Customer Shopping Behaviour Analysis</h3>
+                  <p>Comprehensive analysis of customer shopping patterns using Python and Power BI dashboard</p>
+                </div>
+              </div>
+              <div className="project-content-section">
+                <div className="project-skills">
+                  <span className="skill-tag">Python</span>
+                  <span className="skill-tag">Pandas</span>
+                  <span className="skill-tag">MySQL</span>
+                  <span className="skill-tag">Power BI</span>
+                  <span className="skill-tag">Git</span>
+                  <span className="skill-tag">Jupyter Notebook</span>
+                </div>
+                <a href="https://github.com/Mosrichard/Customer_Shopping_Behavior" target="_blank" rel="noopener noreferrer" className="github-btn">
+                  🐙 View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  };
+
+  const renderSubSection = () => {
+    switch(activeSubSection) {
+      case 'devops': return renderDevOpsContent();
+      case 'data-analysis': return renderDataAnalysisContent();
+      default: return renderDevOpsContent();
+    }
+  };
+
+  return (
+    <div className="section projects-section">
+      <h2>Projects</h2>
+      
+      {/* Sub-navigation */}
+      <nav className="sub-navbar">
+        <div className="nav-links">
+          <a href="#devops" className={activeSubSection === 'devops' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveSubSection('devops'); }}>DevOps</a>
+          <a href="#data-analysis" className={activeSubSection === 'data-analysis' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveSubSection('data-analysis'); }}>Data Analysis</a>
+        </div>
+      </nav>
+
+      {renderSubSection()}
     </div>
   );
 };

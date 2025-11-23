@@ -36,6 +36,7 @@ const Home = () => {
           <h3>Skills</h3>
           <div className="skills-compact">
             <span className="skill-tag">Python</span>
+            <span className="skill-tag">Pandas</span>
             <span className="skill-tag">SQL</span>
             <span className="skill-tag">Ansible</span>
             <span className="skill-tag">Linux</span>

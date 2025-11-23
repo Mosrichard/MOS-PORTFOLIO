@@ -1,34 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import './App.css';
-import Home from './components/Home';
-import Projects from './components/Projects';
+const Home = lazy(() => import('./components/Home'));
+const Projects = lazy(() => import('./components/Projects'));
 
 function App() {
   const [activeSection, setActiveSection] = useState(() => {
     return localStorage.getItem('activeSection') || 'home';
   });
-  const [floatingIcons, setFloatingIcons] = useState([]);
-
-  const devopsIcons = ['🐳', '☁️', '🔧', '🛠️', '⚙️'];
-
-  useEffect(() => {
-    const createFloatingIcon = () => {
-      const icon = devopsIcons[Math.floor(Math.random() * devopsIcons.length)];
-      const id = Date.now() + Math.random();
-      const top = Math.random() * 70 + 15;
-      const left = Math.random() * 80 + 10;
-      
-      setFloatingIcons(prev => [...prev, { id, icon, top, left }]);
-      
-      setTimeout(() => {
-        setFloatingIcons(prev => prev.filter(item => item.id !== id));
-      }, 4000);
-    };
-
-    const interval = setInterval(createFloatingIcon, 2500);
-    return () => clearInterval(interval);
-  }, [devopsIcons]);
+  // Removed floating icons for better performance
 
   // Save active section to localStorage whenever it changes
   useEffect(() => {
@@ -44,18 +24,7 @@ function App() {
 
   return (
     <div className="app">
-      {floatingIcons.map(({ id, icon, top, left }) => (
-        <div
-          key={id}
-          className="floating-icon"
-          style={{
-            top: `${top}%`,
-            left: `${left}%`
-          }}
-        >
-          {icon}
-        </div>
-      ))}
+
       
       <nav className="navbar">
         <div className="nav-links">
@@ -65,7 +34,9 @@ function App() {
       </nav>
 
       <div className="main-content">
-        {renderSection()}
+        <Suspense fallback={<div>Loading...</div>}>
+          {renderSection()}
+        </Suspense>
       </div>
       <Analytics />
     </div>
