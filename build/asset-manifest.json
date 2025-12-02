@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/MOS-PORTFOLIO/static/css/main.6afc7967.css",
-    "main.js": "/MOS-PORTFOLIO/static/js/main.273c90df.js",
+    "main.css": "/MOS-PORTFOLIO/static/css/main.3fdc8464.css",
+    "main.js": "/MOS-PORTFOLIO/static/js/main.f87eb458.js",
+    "static/js/463.1f58ba51.chunk.js": "/MOS-PORTFOLIO/static/js/463.1f58ba51.chunk.js",
+    "static/js/188.1d19de04.chunk.js": "/MOS-PORTFOLIO/static/js/188.1d19de04.chunk.js",
     "static/media/project3.jpg": "/MOS-PORTFOLIO/static/media/project3.9971fe01b335ceae4229.jpg",
+    "static/media/Excel-Dashboard-superstore.jpg": "/MOS-PORTFOLIO/static/media/Excel-Dashboard-superstore.b5a928b6f1f5e567c048.jpg",
     "static/media/k8s-project-1.jpeg": "/MOS-PORTFOLIO/static/media/k8s-project-1.9007525225a917153ae1.jpeg",
+    "static/media/BI Dashboard.jpeg": "/MOS-PORTFOLIO/static/media/BI Dashboard.84c2e014aa57ad9f1895.jpeg",
     "static/media/project2.jpg": "/MOS-PORTFOLIO/static/media/project2.b440f93447e586437558.jpg",
     "static/media/docker-project-2.jpg": "/MOS-PORTFOLIO/static/media/docker-project-2.cac1d8a093c7ee8cd74a.jpg",
     "static/media/docker-project-1.jpg": "/MOS-PORTFOLIO/static/media/docker-project-1.9a528a4a7b9fc6e74b56.jpg",
-    "index.html": "/MOS-PORTFOLIO/index.html",
-    "main.6afc7967.css.map": "/MOS-PORTFOLIO/static/css/main.6afc7967.css.map",
-    "main.273c90df.js.map": "/MOS-PORTFOLIO/static/js/main.273c90df.js.map"
+    "index.html": "/MOS-PORTFOLIO/index.html"
   },
   "entrypoints": [
-    "static/css/main.6afc7967.css",
-    "static/js/main.273c90df.js"
+    "static/css/main.3fdc8464.css",
+    "static/js/main.f87eb458.js"
   ]
 }

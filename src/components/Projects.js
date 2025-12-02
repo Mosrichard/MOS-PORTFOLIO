@@ -6,6 +6,7 @@ import dockerProject2Image from '../assets/docker-project-2.jpg';
 import k8sProject1Image from '../assets/k8s-project-1.jpeg';
 import excelDashboardImage from '../assets/Excel-Dashboard-superstore.jpg';
 import biDashboardImage from '../assets/BI Dashboard.jpeg';
+import awsVpcImage from '../assets/aws-vpc-2tier-arch.jpg';
 
 const Projects = () => {
   const [activeSubSection, setActiveSubSection] = useState('devops');
@@ -13,6 +14,41 @@ const Projects = () => {
   const renderDevOpsContent = () => {
     return (
       <>
+      
+      {/* AWS */}
+      <div className="tech-category">
+        <h3 className="tech-title">AWS</h3>
+        <div className="projects-grid">
+          <div className="project-card project-card-with-image">
+            <div className="project-image-section">
+              <img src={awsVpcImage} alt="AWS VPC 2-Tier Architecture" className="project-image" />
+              <div className="project-title-overlay">
+                <h3>Production-Grade 2-Tier Architecture on AWS</h3>
+                <p>Highly available and scalable 2-Tier AWS architecture with public ALB, private application servers, multi-AZ deployment, and secure VPC networking.</p>
+              </div>
+            </div>
+            <div className="project-content-section">
+              <div className="project-skills">
+                <span className="skill-tag">NAT Gateway</span>
+                <span className="skill-tag">Application Load Balancer</span>
+                <span className="skill-tag">VPC</span>
+                <span className="skill-tag">Auto Scaling Groups</span>
+                <span className="skill-tag">EC2</span>
+                <span className="skill-tag">Security Groups</span>
+                <span className="skill-tag">Internet Gateway</span>
+                <span className="skill-tag">HTML</span>
+                <span className="skill-tag">CSS</span>
+                <span className="skill-tag">JS</span>
+                <span className="skill-tag">Linux</span>
+                <span className="skill-tag">SSH</span>
+              </div>
+              <a href="https://github.com/Mosrichard/production-grade-2tier-aws-architecture" target="_blank" rel="noopener noreferrer" className="github-btn">
+                🐙 View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       
       {/* Linux */}
       <div className="tech-category">
