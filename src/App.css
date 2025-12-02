@@ -146,7 +146,7 @@ html {
 
 .resume-sections {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-top: 1rem;
   flex: 1;

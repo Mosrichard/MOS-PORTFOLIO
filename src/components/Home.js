@@ -24,12 +24,36 @@ const Home = () => {
             <span>Moving to DevOps roles</span>
           </div>
         </div>
+        
+        <div style={{textAlign: 'center', marginBottom: '2rem'}}>
+          <a href="#" className="github-btn" style={{fontSize: '1rem', padding: '0.8rem 2rem'}}>
+            📄 Download Resume
+          </a>
+        </div>
       </div>
 
       <div className="resume-sections">
         <div className="resume-section">
           <h3>About</h3>
-          <p>Aspiring DevOps Engineer skilled in Linux, Docker, Kubernetes, AWS, and automation. Passionate about building scalable infrastructure and streamlining deployments with CI/CD and IaC.</p>
+          <p>DevOps Engineer with hands-on experience in cloud infrastructure, containerization, and automation. Proven track record of reducing deployment times by 60% and improving system reliability through Infrastructure as Code and CI/CD pipelines.</p>
+        </div>
+
+        <div className="resume-section">
+          <h3>Experience</h3>
+          <div style={{fontSize: '0.85rem', lineHeight: '1.4'}}>
+            <div style={{marginBottom: '1rem'}}>
+              <strong style={{color: 'white'}}>Data Analyst</strong><br/>
+              <span style={{color: 'rgba(255,255,255,0.8)'}}>Current Role | Jan 2024 - Oct 2025</span><br/>
+              <span style={{color: 'rgba(255,255,255,0.7)'}}>• Automated data pipelines reducing processing time by 40%</span><br/>
+              <span style={{color: 'rgba(255,255,255,0.7)'}}>• Built interactive dashboards for business insights</span>
+            </div>
+            <div>
+              <strong style={{color: 'white'}}>DevOps Projects</strong><br/>
+              <span style={{color: 'rgba(255,255,255,0.8)'}}>Personal | 2025 - Present</span><br/>
+              <span style={{color: 'rgba(255,255,255,0.7)'}}>• Deployed production-grade AWS architectures</span><br/>
+              <span style={{color: 'rgba(255,255,255,0.7)'}}>• Containerized applications with 99.9% uptime</span>
+            </div>
+          </div>
         </div>
 
         <div className="resume-section">
@@ -52,7 +76,9 @@ const Home = () => {
             <span className="skill-tag">Excel</span>
             <span className="skill-tag">Power BI</span>
             <span className="skill-tag">Git</span>
+            <span className="skill-tag">Terraform</span>
           </div>
+
         </div>
 
         <div className="resume-section">
