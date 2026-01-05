@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import project2Image from '../assets/project2.jpg';
 import project3Image from '../assets/project3.jpg';
 import dockerProject1Image from '../assets/docker-project-1.jpg';
@@ -9,7 +9,9 @@ import biDashboardImage from '../assets/BI Dashboard.jpeg';
 import awsVpcImage from '../assets/aws-vpc-2tier-arch.jpg';
 
 const Projects = () => {
-  const [activeSubSection, setActiveSubSection] = useState('devops');
+  const [activeSubSection, setActiveSubSection] = useState(() => {
+    return localStorage.getItem('activeSubSection') || 'devops';
+  });
 
   const renderDevOpsContent = () => {
     return (
@@ -397,6 +399,11 @@ const Projects = () => {
       </>
     );
   };
+
+  // Save active sub-section to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('activeSubSection', activeSubSection);
+  }, [activeSubSection]);
 
   const renderSubSection = () => {
     switch(activeSubSection) {

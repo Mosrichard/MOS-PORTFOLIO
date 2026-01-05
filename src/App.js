@@ -1,14 +1,13 @@
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import './App.css';
-const Home = lazy(() => import('./components/Home'));
-const Projects = lazy(() => import('./components/Projects'));
+import Home from './components/Home';
+import Projects from './components/Projects';
 
 function App() {
   const [activeSection, setActiveSection] = useState(() => {
     return localStorage.getItem('activeSection') || 'home';
   });
-  // Removed floating icons for better performance
 
   // Save active section to localStorage whenever it changes
   useEffect(() => {
@@ -24,8 +23,6 @@ function App() {
 
   return (
     <div className="app">
-
-      
       <nav className="navbar">
         <div className="nav-links">
           <a href="#home" className={activeSection === 'home' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveSection('home'); }}>Home</a>
@@ -34,9 +31,7 @@ function App() {
       </nav>
 
       <div className="main-content">
-        <Suspense fallback={<div>Loading...</div>}>
-          {renderSection()}
-        </Suspense>
+        {renderSection()}
       </div>
       <Analytics />
     </div>

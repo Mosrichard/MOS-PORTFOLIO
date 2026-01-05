@@ -26,7 +26,13 @@ const Home = () => {
         </div>
         
         <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-          <a href="#" className="github-btn" style={{fontSize: '1rem', padding: '0.8rem 2rem'}}>
+          <a href="#" className="github-btn" style={{fontSize: '1rem', padding: '0.8rem 2rem'}} onClick={(e) => {
+            e.preventDefault();
+            e.target.innerHTML = '🚀 Download Started';
+            setTimeout(() => {
+              e.target.innerHTML = '📄 Download Resume';
+            }, 2000);
+          }}>
             📄 Download Resume
           </a>
         </div>
@@ -40,7 +46,7 @@ const Home = () => {
 
         <div className="resume-section">
           <h3>Experience</h3>
-          <div style={{fontSize: '0.85rem', lineHeight: '1.4'}}>
+          <div style={{fontSize: '0.9rem', lineHeight: '1.4'}}>
             <div style={{marginBottom: '1rem'}}>
               <strong style={{color: 'white'}}>Data Analyst</strong><br/>
               <span style={{color: 'rgba(255,255,255,0.8)'}}>Current Role | Jan 2024 - Oct 2025</span><br/>
