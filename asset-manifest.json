@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.3c1f77fd.css",
-    "main.js": "/static/js/main.fe17b8f4.js",
+    "main.js": "/static/js/main.42fead48.js",
     "static/media/Kubernetes-Taskmanager.png": "/static/media/Kubernetes-Taskmanager.c041b48fd0be5073c726.png",
     "static/media/CICD WITH ACTIONS.png": "/static/media/CICD WITH ACTIONS.b01e249bd65c91b3339a.png",
     "static/media/project3.jpg": "/static/media/project3.9971fe01b335ceae4229.jpg",
+    "static/media/CICD-MERN-APP.png": "/static/media/CICD-MERN-APP.a8290e4fed2bfa707346.png",
     "static/media/Excel-Dashboard-superstore.jpg": "/static/media/Excel-Dashboard-superstore.b5a928b6f1f5e567c048.jpg",
     "static/media/k8s-project-1.jpeg": "/static/media/k8s-project-1.9007525225a917153ae1.jpeg",
     "static/media/BI Dashboard.jpeg": "/static/media/BI Dashboard.84c2e014aa57ad9f1895.jpeg",
@@ -15,10 +16,10 @@
     "static/media/MERN-Docker-App.png": "/static/media/MERN-Docker-App.5d1f8ab43340b5cf1aa7.png",
     "index.html": "/index.html",
     "main.3c1f77fd.css.map": "/static/css/main.3c1f77fd.css.map",
-    "main.fe17b8f4.js.map": "/static/js/main.fe17b8f4.js.map"
+    "main.42fead48.js.map": "/static/js/main.42fead48.js.map"
   },
   "entrypoints": [
     "static/css/main.3c1f77fd.css",
-    "static/js/main.fe17b8f4.js"
+    "static/js/main.42fead48.js"
   ]
 }
