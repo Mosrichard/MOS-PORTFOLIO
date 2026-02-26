@@ -11,6 +11,7 @@ import excelDashboardImage from '../assets/Excel-Dashboard-superstore.jpg';
 import biDashboardImage from '../assets/BI Dashboard.jpeg';
 import awsVpcImage from '../assets/aws-vpc-2tier-arch.jpg';
 import cicdActionsImage from '../assets/CICD WITH ACTIONS.png';
+import cicdMernImage from '../assets/CICD-MERN-APP.png';
 
 const Projects = () => {
   const [activeSubSection, setActiveSubSection] = useState(() => {
@@ -49,6 +50,36 @@ const Projects = () => {
       <div className="tech-category">
         <h3 className="tech-title">CI/CD & GitHub Actions</h3>
         <div className="projects-grid">
+          <div className="project-card project-card-with-image">
+            <div className="project-image-section">
+              <img src={cicdMernImage} alt="MERN Stack on AWS EKS" className="project-image" />
+              <div className="project-title-overlay">
+                <h3>MERN Stack on AWS EKS with CI/CD & Monitoring</h3>
+                <p>AWS Cloud + Terraform + Docker + Kubernetes + GitHub Actions CI/CD + Helm Monitoring + MERN full-stack integration</p>
+              </div>
+            </div>
+            <div className="project-content-section">
+              <div className="project-skills">
+                <span className="skill-tag">AWS</span>
+                <span className="skill-tag">EC2</span>
+                <span className="skill-tag">VPC</span>
+                <span className="skill-tag">EKS</span>
+                <span className="skill-tag">S3</span>
+                <span className="skill-tag">Terraform</span>
+                <span className="skill-tag">CI/CD</span>
+                <span className="skill-tag">GitHub Actions</span>
+                <span className="skill-tag">Docker</span>
+                <span className="skill-tag">Helm</span>
+                <span className="skill-tag">Prometheus</span>
+                <span className="skill-tag">Grafana</span>
+                <span className="skill-tag">OIDC</span>
+                <span className="skill-tag">Kubernetes</span>
+              </div>
+              <a href="https://github.com/Mosrichard/MERN-TODO-END-TO-END-CICD-DEPLOYMENT-MONITORING" target="_blank" rel="noopener noreferrer" className="github-btn">
+                🐙 View on GitHub
+              </a>
+            </div>
+          </div>
           <div className="project-card project-card-with-image">
             <div className="project-image-section">
               <img src={cicdActionsImage} alt="CI/CD with GitHub Actions" className="project-image" />
