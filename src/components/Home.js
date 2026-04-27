@@ -182,7 +182,7 @@ const Home = () => {
           <div style={{fontSize: '0.9rem', lineHeight: '1.4'}}>
             <div style={{marginBottom: '1rem'}}>
               <strong style={{color: 'white'}}>Data Analyst</strong><br/>
-              <span style={{color: 'rgba(255,255,255,0.8)'}}>Current Role | Jan 2024 - Oct 2025</span><br/>
+              <span style={{color: 'rgba(255,255,255,0.8)'}}>Previous Role | Jan 2024 - Oct 2025</span><br/>
               <span style={{color: 'rgba(255,255,255,0.7)'}}>• Automated data pipelines reducing processing time by 40%</span><br/>
               <span style={{color: 'rgba(255,255,255,0.7)'}}>• Built interactive dashboards for business insights</span>
             </div>
